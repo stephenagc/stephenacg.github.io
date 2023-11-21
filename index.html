@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Luciana</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#Depoimento">Depoimento</a></li>
+        <li><a href="#projects">Aulas</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Luciana</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+        <li><a href="#Depoimento" onclick="toggleMenu()">Depoimento</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Aulas</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img
+        src="https://img.freepik.com/premium-photo/teacher-woman-avatar-icon-illustration-vector-style_131965-868.jpg"
+        alt="Luciana foto de perfil" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, Eu sou</p>
+      <h1 class="title">Luciana</h1>
+      <p class="section__text__p2">Professora de Português</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Currículo
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Informações de contato
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Conheça mais</p>
+    <h1 class="title">Sobre</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="https://img.freepik.com/premium-photo/teacher-woman-avatar-icon-illustration-vector-style_131965-868.jpg"
+          alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experiência</h3>
+            <p>4 anos ministrando aulas particulares<br /></p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Educação</h3>
+            <p>B.Sc. Bacharela em Lingua Portuguesa<br />Ma. Mestra em Letras</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+            reprehenderit et laborum, rem, dolore eum quod voluptate
+            exercitationem nobis, nihil esse debitis maxime facere minus sint
+            delectus velit in eos quo officiis explicabo deleniti dignissimos.
+            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+            reiciendis ea magnam? Nulla, impedit fuga!
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Veja meus</p>
+    <h1 class="title">Serviços</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tabela de Serviços e Preços</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Aulas particulares</h3>
+                <p>R$ 100/hora</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Aulas em Grupo</h3>
+                <p>R$ 50/hora</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Preparatório para exames</h3>
+                <p>R$ 500/mês</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Redação de textos</h3>
+                <p>R$ 50/texto</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Correção de textos</h3>
+                <p>R$ 25/texto</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Português Para estrangeiros</h3>
+                <p>R$ 100/hora</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        </article>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="Depoimento">
+      <section class="depoimentos">
+        <h2>Depoimentos de Alunos</h2>
+        <div class="container">
+          <ul class="depoimentos-list">
+            <li>
+              <div class="depoimento-foto">
+                <img class="depoimento-foto" src="https://cdn-icons-png.flaticon.com/512/5526/5526504.png"
+                  alt="Foto de perfil do aluno">
+              </div>
+              <div class="depoimento-texto">
+                <p>"A professora Luciana é uma excelente profissional. Ela é muito dedicada e sempre está
+                  disposta a ajudar os alunos. As aulas são muito dinâmicas e divertidas, e eu aprendi muito com ela."
+                </p>
+                <p class="depoimento-nome">João Guilherme</p>
+              </div>
+            </li>
+            <li>
+              <div class="depoimento-foto">
+                <img class="depoimento-foto" src="https://cdn-icons-png.flaticon.com/512/3413/3413565.png"
+                  alt="Foto de perfil do aluno">
+              </div>
+              <div class="depoimento-texto">
+                <p>"A professora Luciana é muito paciente e compreensiva. Ela sempre se preocupa em entender
+                  as
+                  dificuldades dos alunos e ajudá-los a superar os desafios. Eu recomendo muito as aulas dela."</p>
+                <p class="depoimento-nome">Steven Gun</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <img src="./assets/arrow.png" alt="Icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects" class="projects">
+    <p class="section__text__p1">Veja minhas</p>
+    <h1 class="title">Aulas Recentes</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="https://imaculadacic.com.br/wp-content/uploads/2019/06/BC01-0054.jpg" alt="Aula Em Grupo"
+              class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Aula em Grupo</h2>
+          <div class="btn-container">
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="https://institutoinfantojuvenil.com.br/wp-content/uploads/2020/06/TOPO-ICIJ-2020-06-10T172645.944-scaled.jpg"
+              alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Aula Particular</h2>
+          <div class="btn-container">
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="https://roraimaemfoco.com/wp-content/uploads/2022/11/escolegiscurso143.jpeg" alt="Project 3"
+              class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Preparatório para Exames</h2>
+          <div class="btn-container">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Entre em Contato</p>
+    <h1 class="title">Contato</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">Exemplo@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#Depoimento">Depoimento</a></li>
+          <li><a href="#projects">Aulas</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Luciana. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
